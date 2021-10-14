@@ -1,0 +1,19 @@
+From: Debian Python Team <team+python@tracker.debian.org>
+Date: Mon, 11 Jan 2021 15:02:59 +0100
+Subject: no-crate
+
+---
+ tests/test_agatesql.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/tests/test_agatesql.py
++++ b/tests/test_agatesql.py
+@@ -169,7 +169,7 @@
+         self.assertEqual(statement.replace('\t', '  '), dedent(expected))
+ 
+     def test_to_sql_create_statement_with_dialects(self):
+-        for dialect in ['crate', 'mssql', 'mysql', 'postgresql', 'sqlite']:
++        for dialect in ['mssql', 'mysql', 'postgresql', 'sqlite']:
+             self.table.to_sql_create_statement('test_table', dialect=dialect)
+ 
+     def test_to_sql_create_statement_zero_width(self):

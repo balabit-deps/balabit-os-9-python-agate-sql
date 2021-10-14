@@ -1,0 +1,83 @@
+python-agate-sql (0.5.8-1) unstable; urgency=medium
+
+  [ Andrius Merkys ]
+  * Team upload.
+  * New upstream version 0.5.8 (Closes: #995780)
+  * Refreshing patches.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 14 Oct 2021 03:41:58 -0400
+
+python-agate-sql (0.5.5-4) unstable; urgency=medium
+
+  * Add @builddeps@ to autopkgtests' Depends
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 18 Jan 2021 15:39:49 +0100
+
+python-agate-sql (0.5.5-3) unstable; urgency=medium
+
+  * Team upload.
+  * Bump minimum required python3-sqlalchemy version due to tests
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 15 Jan 2021 22:06:58 +0100
+
+python-agate-sql (0.5.5-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Piotr Ożarowski ]
+  * Add 0004-escape-text-column-name-fixes-for-SA-v1.3.22.patch to fix tests
+    with SQLAlchemy >= 1.3.22
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 14 Jan 2021 13:32:35 +0100
+
+python-agate-sql (0.5.5-1) unstable; urgency=medium
+
+  [ Andrius Merkys ]
+  * Team upload.
+  * New upstream version 0.5.5
+  * Refreshing patches.
+  * Skipping tests for unpackaged 'crate' plugin for 'sqlalchemy'.
+  * Updating debian/copyright.
+  * Adding 'Rules-Requires-Root: no'.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python3-Version field
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Debian Janitor ]
+  * Use secure URI in Homepage field.
+  * Bump debhelper from old 10 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 18 Aug 2020 01:18:50 -0400
+
+python-agate-sql (0.5.2-2) unstable; urgency=medium
+
+  * Bump standards version to 4.0.0, no changes required
+  * Build the docs using the upstream Makefile
+  * Mark doc package multiarch foreign
+  * Release to unstable
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Tue, 25 Jul 2017 20:38:48 +0100
+
+python-agate-sql (0.5.2-1) experimental; urgency=medium
+
+  * New upstream version 0.5.2
+  * Refresh the patch queue
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Tue, 02 May 2017 08:46:38 +0100
+
+python-agate-sql (0.5.1-1) experimental; urgency=low
+
+  * Initial release. (Closes: #850451)
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Wed, 22 Mar 2017 11:15:15 +0000
